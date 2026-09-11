@@ -12,6 +12,7 @@ Este repositorio reúne pequeños proyectos creados durante un curso de agentes 
 | [`model_comparison`](./model_comparison/) | Comparación de modelos y configuración de generación |
 | [`problem_solver`](./problem_solver/) | Planificación y razonamiento de varios pasos con `BuiltInPlanner` |
 | [`personalized_greeter`](./personalized_greeter/) | Personalización de instrucciones mediante el estado de sesión |
+| [`namespace_demo`](./namespace_demo/) | Alcance y persistencia de los namespaces de estado |
 
 Cada proyecto contiene su propio `README.md` con una explicación del código y formas de probarlo.
 
