@@ -1,0 +1,26 @@
+# Variables de entorno y secretos (en cualquier proyecto)
+.env
+.env.*
+!.env.example
+
+# Entornos virtuales de Python
+.venv/
+venv/
+env/
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Datos locales generados por Google ADK
+.adk/
+
+# Herramientas de desarrollo y sistema operativo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.DS_Store
+.idea/
+.vscode/
