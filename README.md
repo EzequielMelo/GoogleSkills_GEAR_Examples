@@ -13,6 +13,10 @@ Este repositorio reúne pequeños proyectos creados durante un curso de agentes 
 | [`problem_solver`](./problem_solver/) | Planificación y razonamiento de varios pasos con `BuiltInPlanner` |
 | [`personalized_greeter`](./personalized_greeter/) | Personalización de instrucciones mediante el estado de sesión |
 | [`namespace_demo`](./namespace_demo/) | Alcance y persistencia de los namespaces de estado |
+| [`geography_assistant`](./geography_assistant/) | Uso de una función de Python como herramienta para consultar capitales |
+| [`research_assistant`](./research_assistant/) | Búsqueda de Google integrada para investigar información actual |
+| [`math_assistant`](./math_assistant/) | Ejecución de código integrada para cálculos matemáticos |
+| [`file_reader_assistant`](./file_reader_assistant/) | Lectura de archivos mediante un servidor MCP local |
 
 Cada proyecto contiene su propio `README.md` con una explicación del código y formas de probarlo.
 
