@@ -17,6 +17,8 @@ Este repositorio reúne pequeños proyectos creados durante un curso de agentes 
 | [`research_assistant`](./research_assistant/) | Búsqueda de Google integrada para investigar información actual |
 | [`math_assistant`](./math_assistant/) | Ejecución de código integrada para cálculos matemáticos |
 | [`file_reader_assistant`](./file_reader_assistant/) | Lectura de archivos mediante un servidor MCP local |
+| [`travel_agent`](./travel_agent/) | Coordinación de varias herramientas de función personalizadas |
+| [`customer_support`](./customer_support/) | Instrucciones estratégicas, manejo de errores y derivación de casos |
 
 Cada proyecto contiene su propio `README.md` con una explicación del código y formas de probarlo.
 
