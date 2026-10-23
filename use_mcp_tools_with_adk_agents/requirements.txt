@@ -1,0 +1,3 @@
+google-adk[otel-gcp]==1.23.0
+lxml
+beautifulsoup4

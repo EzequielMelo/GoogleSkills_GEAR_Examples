@@ -184,3 +184,4 @@ Envía una solicitud como:
 > *"Create content for a slide about our excellent on-the-job training."*
 
 El agente redactará el contenido y transferirá automáticamente la tarea al agente A2A remoto para devolver la imagen correspondiente.
+
