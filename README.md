@@ -20,6 +20,7 @@ Este repositorio reúne pequeños proyectos creados durante un curso de agentes 
 | [`travel_agent`](./travel_agent/) | Coordinación de varias herramientas de función personalizadas |
 | [`customer_support`](./customer_support/) | Instrucciones estratégicas, manejo de errores y derivación de casos |
 | [`build_multi_agent_systems_with_adk`](./build_multi_agent_systems_with_adk/) | Build Multi-Agent Systems with ADK: transferencias padre/sub-agente, `SequentialAgent`, `LoopAgent` y `ParallelAgent` |
+| [`connect_to_remote_agents_with_adk_and_a2a`](./connect_to_remote_agents_with_adk_and_a2a/) | Connect to Remote Agents with ADK and A2A: servidores A2A en Cloud Run, Agent Cards y `RemoteA2aAgent` |
 
 ### Detalle de `build_multi_agent_systems_with_adk` (Build Multi-Agent Systems with ADK)
 
@@ -31,6 +32,15 @@ El proyecto proviene del laboratorio **"Build Multi-Agent Systems with ADK"** de
 | [`parte_1_sequential`](./build_multi_agent_systems_with_adk/parte_1_sequential/) | `SequentialAgent` — flujo lineal: investigar → escribir → guardar |
 | [`parte_2_loop`](./build_multi_agent_systems_with_adk/parte_2_loop/) | `LoopAgent` — ciclo iterativo de investigación, escritura y crítica |
 | [`parte_3_parallel`](./build_multi_agent_systems_with_adk/parte_3_parallel/) | `ParallelAgent` — preproducción en paralelo (taquilla + casting) |
+
+### Detalle de `connect_to_remote_agents_with_adk_and_a2a` (Connect to Remote Agents with ADK and the Agent2Agent SDK)
+
+El proyecto proviene del laboratorio **"Connect to Remote Agents with ADK and the Agent2Agent (A2A) SDK"** (GENAI120) del programa GEAR. Demuestra cómo conectar agentes remotos como microservicios independientes mediante el protocolo Agent2Agent:
+
+| Sub-agente | Rol |
+| --- | --- |
+| [`illustration_agent`](./connect_to_remote_agents_with_adk_and_a2a/illustration_agent/) | Servidor A2A desplegado en Cloud Run que genera ilustraciones corporativas y las sube a Google Cloud Storage |
+| [`slide_content_agent`](./connect_to_remote_agents_with_adk_and_a2a/slide_content_agent/) | Cliente ADK que redacta contenido para diapositivas y delega la ilustración al agente remoto mediante `RemoteA2aAgent` y su Agent Card |
 
 Cada proyecto contiene su propio `README.md` con una explicación del código y formas de probarlo.
 
