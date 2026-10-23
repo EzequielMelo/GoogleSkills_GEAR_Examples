@@ -174,3 +174,4 @@ Selecciona `google_maps_mcp_agent` en el selector de agentes e interactúa en un
 3. Envía una solicitud de lectura web:
    > *"Load the content from http://example.com."*
 4. Observa cómo el agente levanta el subproceso `adk_server.py`, el servidor ejecuta `load_web_page`, registra la actividad en `mcp_server.log` y retorna el contenido de la página web al agente.
+
