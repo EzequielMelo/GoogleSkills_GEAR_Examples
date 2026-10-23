@@ -51,7 +51,7 @@ Respecto a la Parte 2, se añade:
 ## Ejecución
 
 ```bash
-cd multiagent_systems
+cd build_multi_agent_systems_with_adk
 adk run parte_3_parallel/workflow_agents
 ```
 

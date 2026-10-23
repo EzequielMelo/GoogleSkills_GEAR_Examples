@@ -48,7 +48,7 @@ La Parte 3 amplía este flujo añadiendo además un `ParallelAgent`.
 ## Ejecución
 
 ```bash
-cd multiagent_systems
+cd build_multi_agent_systems_with_adk
 adk run parte_2_loop/workflow_agents
 ```
 

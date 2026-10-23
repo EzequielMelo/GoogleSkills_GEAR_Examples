@@ -44,7 +44,7 @@ Esta parte realiza **una única pasada**: investigar → escribir → guardar. N
 ## Ejecución
 
 ```bash
-cd multiagent_systems
+cd build_multi_agent_systems_with_adk
 adk run parte_1_sequential/workflow_agents
 ```
 

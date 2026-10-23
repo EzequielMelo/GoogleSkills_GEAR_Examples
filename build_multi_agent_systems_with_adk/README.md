@@ -1,13 +1,13 @@
-# Sistemas Multiagentes con Google ADK
+# Build Multi-Agent Systems with ADK
 
-Este proyecto agrupa los ejercicios del laboratorio **"Orchestrate multi-agent systems with ADK"** del programa GEAR (Gemini Enterprise Agent Ready) de Google. El laboratorio enseña a construir sistemas donde varios agentes colaboran, se transfieren el control y comparten estado a través de la sesión.
+Este proyecto agrupa los ejercicios del laboratorio **"Build Multi-Agent Systems with ADK"** del programa GEAR (Gemini Enterprise Agent Ready) de Google. El laboratorio enseña a construir sistemas donde varios agentes colaboran, se transfieren el control y comparten estado a través de la sesión.
 
 El laboratorio original se dividió en tres partes progresivas porque cada una introduce un patrón de orquestación distinto. Además incluye un módulo compartido (`parent_and_subagents`) que demuestra las transferencias básicas entre agente padre y sub-agentes.
 
 ## Estructura del proyecto
 
 ```
-multiagent_systems/
+build_multi_agent_systems_with_adk/
 ├── README.md                          ← este archivo
 ├── callback_logging.py                ← callbacks de logging compartidos
 ├── requirements.txt                   ← dependencias adicionales (Wikipedia, LangChain)
@@ -132,7 +132,7 @@ Desde el directorio raíz del workspace:
 
 ```bash
 source .venv/bin/activate
-pip install google-adk -r multiagent_systems/requirements.txt
+pip install google-adk -r build_multi_agent_systems_with_adk/requirements.txt
 ```
 
 ## Ejecución
@@ -141,7 +141,7 @@ Cada sub-proyecto se ejecuta de forma independiente con `adk run` o `adk web`:
 
 ```bash
 # Transferencias padre/sub-agentes (viajes)
-cd multiagent_systems
+cd build_multi_agent_systems_with_adk
 adk run parent_and_subagents
 
 # Flujo secuencial (películas)
@@ -162,5 +162,5 @@ adk web
 
 ## Origen
 
-Laboratorio **"Orchestrate multi-agent systems with ADK"** del programa [GEAR (Gemini Enterprise Agent Ready)](https://cloud.google.com/gemini/gear) de Google Cloud. El laboratorio original se ejecuta en Cloud Shell con autenticación de Vertex AI; aquí se adapta para ejecución local.
+Laboratorio **"Build Multi-Agent Systems with ADK"** del programa [GEAR (Gemini Enterprise Agent Ready)](https://cloud.google.com/gemini/gear) de Google Cloud. El laboratorio original se ejecuta en Cloud Shell con autenticación de Vertex AI; aquí se adapta para ejecución local.
 

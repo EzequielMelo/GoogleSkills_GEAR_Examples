@@ -47,7 +47,7 @@ El agente padre no necesita lógica personalizada para transferir: ADK se encarg
 ## Ejecución
 
 ```bash
-cd multiagent_systems
+cd build_multi_agent_systems_with_adk
 adk run parent_and_subagents
 ```
 

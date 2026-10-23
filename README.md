@@ -19,18 +19,18 @@ Este repositorio reúne pequeños proyectos creados durante un curso de agentes 
 | [`file_reader_assistant`](./file_reader_assistant/) | Lectura de archivos mediante un servidor MCP local |
 | [`travel_agent`](./travel_agent/) | Coordinación de varias herramientas de función personalizadas |
 | [`customer_support`](./customer_support/) | Instrucciones estratégicas, manejo de errores y derivación de casos |
-| [`multiagent_systems`](./multiagent_systems/) | Sistemas multiagentes: transferencias padre/sub-agente, `SequentialAgent`, `LoopAgent` y `ParallelAgent` |
+| [`build_multi_agent_systems_with_adk`](./build_multi_agent_systems_with_adk/) | Build Multi-Agent Systems with ADK: transferencias padre/sub-agente, `SequentialAgent`, `LoopAgent` y `ParallelAgent` |
 
-### Detalle de `multiagent_systems`
+### Detalle de `build_multi_agent_systems_with_adk` (Build Multi-Agent Systems with ADK)
 
-El proyecto de sistemas multiagentes proviene del laboratorio **"Orchestrate multi-agent systems with ADK"** del programa GEAR. Se divide en un módulo compartido y tres partes progresivas:
+El proyecto proviene del laboratorio **"Build Multi-Agent Systems with ADK"** del programa GEAR (Gemini Enterprise Agent Ready) de Google. Se divide en un módulo compartido y tres partes progresivas:
 
 | Sub-proyecto | Tema |
 | --- | --- |
-| [`parent_and_subagents`](./multiagent_systems/parent_and_subagents/) | Transferencias entre agente padre y sub-agentes según la intención del usuario |
-| [`parte_1_sequential`](./multiagent_systems/parte_1_sequential/) | `SequentialAgent` — flujo lineal: investigar → escribir → guardar |
-| [`parte_2_loop`](./multiagent_systems/parte_2_loop/) | `LoopAgent` — ciclo iterativo de investigación, escritura y crítica |
-| [`parte_3_parallel`](./multiagent_systems/parte_3_parallel/) | `ParallelAgent` — preproducción en paralelo (taquilla + casting) |
+| [`parent_and_subagents`](./build_multi_agent_systems_with_adk/parent_and_subagents/) | Transferencias entre agente padre y sub-agentes según la intención del usuario |
+| [`parte_1_sequential`](./build_multi_agent_systems_with_adk/parte_1_sequential/) | `SequentialAgent` — flujo lineal: investigar → escribir → guardar |
+| [`parte_2_loop`](./build_multi_agent_systems_with_adk/parte_2_loop/) | `LoopAgent` — ciclo iterativo de investigación, escritura y crítica |
+| [`parte_3_parallel`](./build_multi_agent_systems_with_adk/parte_3_parallel/) | `ParallelAgent` — preproducción en paralelo (taquilla + casting) |
 
 Cada proyecto contiene su propio `README.md` con una explicación del código y formas de probarlo.
 
