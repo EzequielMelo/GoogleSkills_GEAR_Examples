@@ -22,6 +22,7 @@ Este repositorio reúne pequeños proyectos creados durante un curso de agentes 
 | [`build_multi_agent_systems_with_adk`](./build_multi_agent_systems_with_adk/) | Build Multi-Agent Systems with ADK: transferencias padre/sub-agente, `SequentialAgent`, `LoopAgent` y `ParallelAgent` |
 | [`connect_to_remote_agents_with_adk_and_a2a`](./connect_to_remote_agents_with_adk_and_a2a/) | Connect to Remote Agents with ADK and A2A: servidores A2A en Cloud Run, Agent Cards y `RemoteA2aAgent` |
 | [`use_mcp_tools_with_adk_agents`](./use_mcp_tools_with_adk_agents/) | Use Model Context Protocol (MCP) Tools with ADK Agents: cliente de servidores MCP remotos (Google Maps) y servidor MCP custom con herramientas ADK |
+| [`deploy_agent_with_adk_challenge_lab`](./deploy_agent_with_adk_challenge_lab/) | Deploy an Agent with ADK Challenge Lab: agente jerárquico (Paint Agent) con Agent Search, estado de sesión, despliegue en Agent Runtime y frontend Chainlit |
 
 ### Detalle de `build_multi_agent_systems_with_adk` (Build Multi-Agent Systems with ADK)
 
@@ -51,6 +52,18 @@ El proyecto proviene del laboratorio **"Use Model Context Protocol (MCP) Tools w
 | --- | --- |
 | [`google_maps_mcp_agent`](./use_mcp_tools_with_adk_agents/google_maps_mcp_agent/) | **Patrón 1 (ADK como Cliente MCP):** Consume el servidor MCP remoto de Google Maps (*Maps Grounding Lite*) mediante `MCPToolset` y Streamable HTTP con autenticación OAuth |
 | [`adk_mcp_server`](./use_mcp_tools_with_adk_agents/adk_mcp_server/) | **Patrón 2 (Servidor MCP con herramientas ADK):** Implementa un servidor MCP (`adk_server.py`) que expone `load_web_page` vía `stdio`, consumido por un agente ADK cliente |
+
+### Detalle de `deploy_agent_with_adk_challenge_lab` (Deploy an Agent with ADK Challenge Lab - Skill Badge)
+
+El proyecto corresponde al laboratorio de evaluación final (**Challenge Lab GENAI129**) del programa GEAR, con el cual se certifica la Skill Badge oficial en ADK. Integra un flujo completo de negocio para *Cymbal Shops*:
+
+| Componente | Rol en el Challenge Lab |
+| --- | --- |
+| [`paint_agent`](./deploy_agent_with_adk_challenge_lab/paint_agent/) | **Root Agent:** Coordina la conversación, persiste estado (`set_session_value`) e integra a `search_agent` envuelto en `AgentTool` para evitar incompatibilidades de herramientas |
+| [`search_agent`](./deploy_agent_with_adk_challenge_lab/paint_agent/sub_agents/search_agent/) | **Búsqueda empresarial:** Consulta fichas técnicas de pinturas en Google Agent Search / Vertex AI Search con `VertexAiSearchTool` |
+| [`room_planner`](./deploy_agent_with_adk_challenge_lab/paint_agent/sub_agents/room_planner/) | **Sub-agente:** Asesora en el número de habitaciones y muestra paletas de colores interactivas |
+| [`coverage_calculator`](./deploy_agent_with_adk_challenge_lab/paint_agent/sub_agents/room_planner/sub_agents/coverage_calculator/) | **Sub-agente métrico:** Lee estado (`{COVERAGE_RATE?}`, `{PRICE?}`), calcula metros cuadrados y botes con `paint_coverage_calculator` |
+| [`chainlit_ui`](./deploy_agent_with_adk_challenge_lab/chainlit_ui/) | **Frontend conversacional:** Aplicación web en Chainlit conectada por streaming al agente desplegado en Agent Runtime (Vertex AI Reasoning Engines) |
 
 Cada proyecto contiene su propio `README.md` con una explicación del código y formas de probarlo.
 
