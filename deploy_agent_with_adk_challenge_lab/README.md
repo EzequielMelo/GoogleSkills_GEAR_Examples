@@ -206,3 +206,4 @@ Abre `http://localhost:8000` en tu navegador.
 | **5** | `Deep Ocean` | Confirma el color y pide las dimensiones de la habitación. |
 | **6** | `3m by 4m. 3m high. 1 door, 2 windows.` | Transfiere a `coverage_calculator_agent`, invoca `paint_coverage_calculator` y pregunta cuántas capas se aplicarán. |
 | **7** | `Two coats.` | Calcula la superficie neta ($74\,\text{m}^2$), los litros necesarios, los botes de $2.5\,\text{L}$ y el presupuesto total final. |
+
